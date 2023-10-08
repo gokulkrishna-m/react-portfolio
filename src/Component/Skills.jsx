@@ -44,14 +44,14 @@ const Skills = () => {
       s1:<GrCertificate size={40}/>,
       url:"https://www.hackerrank.com/certificates/9fa6b2a8115c",
       title:"SQL (Basic)",
-      by:"- HackerRank",
+      by:"HackerRank",
    },
    {
       id:"2",
       s1:<GrCertificate size={40}/>,
       url:"https://www.udemy.com/certificate/UC-6NLPQNBT/",
-      title:"The Complete Python Masterclass: Learn Python From Scratch",
-      by:"- Udemy",
+      title:"The Complete Python Masterclass",
+      by:"Udemy",
    }
   ]
 
@@ -93,7 +93,7 @@ const Skills = () => {
             {
                certValue.map((value)=>(
                   <tr key={value.id}>
-                     <td><span className='reactIcon text-xl'>{value.s1}<a href={value.url} className='text-black' rel='noopener noreferrer' title="credential" target="_blank">{value.title}</a>{value.by}</span></td>
+                     <td><span className='reactIcon text-lg text-left'>{value.s1}<a href={value.url} className='text-black' rel='noopener noreferrer' title="credential" target="_blank">{value.title}</a>-{value.by}</span></td>
                      {/* <td style={{width:'50px'}}><span className='reactIcon text-xl'>{value.s2}{value.n2}</span></td> */}
                   </tr>
                ))
