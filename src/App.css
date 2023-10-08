@@ -24,15 +24,140 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  width: 100%;
+  /* background-color: #304146; */
+  background-color: black;
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Nav {
+  /* width: 100%; */
+  /* background-color: #333; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* z-index: 1; */
+
+
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.Nav ul {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.Nav li {
+  padding: 1rem;
+}
+
+.Nav li:hover, 
+.Nav li:focus {
+  padding: 1rem;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Nav li:hover, 
+.Nav li:focus, 
+.Nav li:hover a, 
+.Nav li:focus a  {
+  background-color: #eee;
+  color: #333;
+}
+
+/* .Nav li:focus a{
+  color: #fff;
+} */
+.Nav li:hover a, 
+.Nav li:focus a {
+  cursor: pointer;
+}
+
+/* .footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  } */
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  /* color: white; */
+  text-align: center;
+}
+  
+.footer .row{
+  width:100%;
+  /* margin:1% 0%; */
+  /* padding:0.6% 0%; */
+  /* color:gray; */
+  font-size:0.8em;
+}
+  
+.footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+}
+
+.footer .row a:hover{
+  color:#fff;
+}
+
+.footer .row ul{
+  width:100%;
+}
+
+.footer .row ul li{
+  display:inline-block;
+  margin:0px 5px;
+  padding-top: 5px;
+  /* padding-bottom: 5px; */
+}
+
+/* .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+  text-align:left;
+  padding:5%;
+}
+
+.footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+}
+.footer .row a i{
+  margin:0% 3%;
+}
+} */
+
+.reactIcon{
+  display: flex;
+/* justify-content: right; */
 }
