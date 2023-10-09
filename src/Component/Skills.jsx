@@ -10,28 +10,28 @@ const Skills = () => {
   const tableValue = [
     {
       id:"1",
-      s1:<FaReact size={40}/>,
+      s1:<FaReact size={30}/>,
       n1:"React",
-      s2:<SiSpringboot size={40}/>,
+      s2:<SiSpringboot size={30}/>,
       n2:"SpringBoot"
     },
     {
       id:"2",
-      s1:<FaHtml5 size={40}/>,
+      s1:<FaHtml5 size={30}/>,
       n1:"HTML",
-      s2:<DiBootstrap size={40}/>,
+      s2:<DiBootstrap size={30}/>,
       n2:"BootStrap"
     },
     {
       id:"3",
-      s1:<BiLogoJavascript size={40}/>,
+      s1:<BiLogoJavascript size={30}/>,
       n1:"JavaScript",
-      s2:<BiLogoJquery size={40}/>,
+      s2:<BiLogoJquery size={30}/>,
       n2:"Jquery"
     },
     {
       id:"4",
-      s1:<DiDatabase size={40}/>,
+      s1:<DiDatabase size={30}/>,
       n1:"MySQL,PostgreSQL",
       s2:"",
       n2:""
@@ -41,16 +41,16 @@ const Skills = () => {
   const certValue = [
    {
       id:"1",
-      s1:<GrCertificate size={40}/>,
+      s1:<GrCertificate size={30}/>,
       url:"https://www.hackerrank.com/certificates/9fa6b2a8115c",
-      title:"SQL (Basic)",
+      title:"SQL (Basic)-HackerRank",
       by:"HackerRank",
    },
    {
       id:"2",
-      s1:<GrCertificate size={40}/>,
+      s1:<GrCertificate size={30}/>,
       url:"https://www.udemy.com/certificate/UC-6NLPQNBT/",
-      title:"The Complete Python Masterclass",
+      title:"The Complete Python Masterclass-Udemy",
       by:"Udemy",
    }
   ]
@@ -58,7 +58,7 @@ const Skills = () => {
   return (
    <>
    <h3>I am really good at</h3>
-   <div className='mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400'>
+   <div className='mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1'>
       <table>
          <tbody>
             {tableValue.map((value)=>(
@@ -86,14 +86,14 @@ const Skills = () => {
       <hr>
       </hr>
    </div>
-   <div className='mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400'>
+   <div className='mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1'>
       <h3>CERTIFICATIONS</h3>
       <table>
          <tbody>
             {
                certValue.map((value)=>(
                   <tr key={value.id}>
-                     <td><span className='reactIcon text-lg text-left'>{value.s1}<a href={value.url} className='text-black' rel='noopener noreferrer' title="credential" target="_blank">{value.title}</a>-{value.by}</span></td>
+                     <td><span className='reactIcon text-lg text-left'>{value.s1}<a href={value.url} className='text-black no-underline' rel='noopener noreferrer' title="credential" target="_blank">{value.title}</a></span></td>
                      {/* <td style={{width:'50px'}}><span className='reactIcon text-xl'>{value.s2}{value.n2}</span></td> */}
                   </tr>
                ))
