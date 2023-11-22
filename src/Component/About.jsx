@@ -29,7 +29,7 @@ const About = () => {
     ]
   return (
     <>
-        <main className="py-10 px-4 sm:p-6 md:py-10 md:px-8">
+        <main className="py-10 px-4 sm:p-6 md:py-10 md:px-8 text-black">
             <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
                 <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
                     <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">Associate Consultant, Atos</p>
@@ -52,7 +52,7 @@ const About = () => {
                         Chennai, India
                     </dd>
                 </dl>
-                <div className='mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400'>
+                <div className='mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1'>
                     <ul className="list-outside text-left font-medium">
                         {
                             desc.map((desc)=>(

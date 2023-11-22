@@ -42,7 +42,7 @@ const Experience = () => {
 
   return (
     <>
-    <div className='font-medium mt-4 text-sm text-left leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400'>
+    <div className='font-medium mt-4 text-sm text-left leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1'>
       <h3 className='text-center'>MY EXPERIENCES</h3>
       {/* <table style={{width:'100%',border: "3px solid red",borderCollapse:'collapse'}} className='border-collapse border border-slate-400'>
       <tbody>
