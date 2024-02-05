@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaReact,FaHtml5} from 'react-icons/fa6'
-import {SiSpringboot} from 'react-icons/si'
+import {SiSpringboot,SiPostman} from 'react-icons/si'
 import {DiBootstrap,DiDatabase} from 'react-icons/di'
 import {BiLogoJavascript,BiLogoJquery} from 'react-icons/bi'
 import {GrCertificate} from 'react-icons/gr'
@@ -33,8 +33,8 @@ const Skills = () => {
       id:"4",
       s1:<DiDatabase size={30}/>,
       n1:"MySQL,PostgreSQL",
-      s2:"",
-      n2:""
+      s2:<SiPostman size={30}/>,
+      n2:"Postman"
     }
   ]
 

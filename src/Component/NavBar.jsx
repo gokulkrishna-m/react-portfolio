@@ -23,6 +23,10 @@ const NavBar = () => {
                           <Link className="nav-link px-4 py-0" to="/skill">
                           Skill</Link>
                         </li>
+                        <li className="nav-item fs-5">
+                          <Link className="nav-link px-4 py-0" to="/project">
+                          Project</Link>
+                        </li>
                     </ul>
               </nav>
           </div>
