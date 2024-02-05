@@ -1,6 +1,6 @@
 import React from 'react'
 import gk from '../img/gk.jpg';
-import gkwebp from '../img/gk.webp';
+// import gkwebp from '../img/gk.webp';
 import {GrLocationPin} from 'react-icons/gr'
 // import ImgWithFallback from './ImgWithFallback ';
 
