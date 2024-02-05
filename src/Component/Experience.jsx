@@ -4,41 +4,50 @@ import {HiOutlineBuildingOffice} from 'react-icons/hi2'
 
 const Experience = () => {
 
-  // const expValues = [
-  //   {
-  //     id:"1",
-  //     designation:"<b>Associate Consultant</b> - TMT",
-  //     date:"October 2021 - present<BiCalendar size={20}/>",
-  //     symbol:<HiOutlineBuildingOffice size={25}/>,
-  //     orgUrl:"https://atos.net/en/",
-  //     orgTitle:"Atos",
-  //     orgName:"Atos",
-  //     orgLoc:"Chennai, India",
-  //     jobDesc:"Designed and flexible and scalable data models in Product Information Management (PIM) that facilitated operation, maintenance, and management of sales channels."
-  //   },
-  //   {
-  //     id:"2",
-  //     designation:"<b>Associate Consultant</b> - TMT",
-  //     date:"October 2021 - present<BiCalendar size={20}/>",
-  //     symbol:<HiOutlineBuildingOffice size={25}/>,
-  //     orgUrl:"https://atos.net/en/",
-  //     orgTitle:"Atos",
-  //     orgName:"Atos",
-  //     orgLoc:"Chennai, India",
-  //     jobDesc:"Designed and flexible and scalable data models in Product Information Management (PIM) that facilitated operation, maintenance, and management of sales channels."
-  //   },
-  //   {
-  //     id:"3",
-  //     designation:"<b>Associate Consultant</b> - TMT",
-  //     date:"October 2021 - present<BiCalendar size={20}/>",
-  //     symbol:<HiOutlineBuildingOffice size={25}/>,
-  //     orgUrl:"https://atos.net/en/",
-  //     orgTitle:"Atos",
-  //     orgName:"Atos",
-  //     orgLoc:"Chennai, India",
-  //     jobDesc:"Designed and flexible and scalable data models in Product Information Management (PIM) that facilitated operation, maintenance, and management of sales channels."
-  //   }
-  // ]
+  const expValues = [
+    {
+      id:"1",
+      designation:"Associate Consultant",
+	    domain:"TMT",
+      date:"Oct 2021 - present",
+	    calendar:<BiCalendar size={20}/>,
+      symbol:<HiOutlineBuildingOffice size={25}/>,
+      orgUrl:"https://atos.net/en/",
+      orgTitle:"Atos",
+      orgName:"Atos",
+      orgLoc:"Chennai, India",
+      jobDesc:"Designed and flexible and scalable data models in Product Information Management (PIM) that facilitated operation, maintenance, and management of sales channels.",
+      jobDesc1:""
+    },
+    {
+      id:"2",
+      designation:"Associate Consultant",
+	    domain:"Banking",
+      date:"Nov 2020 - Oct 2021",
+	    calendar:<BiCalendar size={20}/>,
+      symbol:<HiOutlineBuildingOffice size={25}/>,
+      orgUrl:"https://www.intellectdesign.com/",
+      orgTitle:"Intellect Design Arena",
+      orgName:"Intellect Design Arena",
+      orgLoc:"Chennai, India",
+      jobDesc:"Designed and Build Core Banking application for Indian regions using Java/J2EE technologies.",
+      jobDesc1:<><br></br>{`Product Engineer at `}<a href='https://www.igcb.com/' className='text-black' title='iGCB' rel='noopener noreferrer' target='_blank'>{`Intellect Global Consumer Banking Unit`}</a>.</>
+    },
+    {
+      id:"3",
+      designation:"Software Engineer",
+	    domain:"Insurance",
+      date:"Jan 2019 - Oct 2020",
+	    calendar:<BiCalendar size={20}/>,
+      symbol:<HiOutlineBuildingOffice size={25}/>,
+      orgUrl:"https://in.go-db.com/index.html",
+      orgTitle:"GoDB-Tech",
+      orgName:"GoDB Tech",
+      orgLoc:"Chennai, India",
+      jobDesc:"Designed and Developed an Insurance application products such as Medical, Two - Wheeler, Private Car, Commercial Vehicle, COVID-19 for Indian regions using Java/J2EE technologies.",
+      jobDesc1:""
+    }
+  ]
 
   return (
     <>
@@ -57,13 +66,42 @@ const Experience = () => {
           </tr>
       </tbody>
       </table> */}
-      <table style={{width:'100%'}}>
+      {
+        expValues.map((value)=>(<div key={value.id}>
+          <table style={{width:'100%'}}>
+              <tbody>
+                <tr>
+                    <td><b>{value.designation}</b> - {value.domain}</td>
+                    <td>
+                      <span className='reactIcon' style={{justifyContent:'right'}}>
+                          {value.date}
+                          {value.calendar}
+                      </span>
+                    </td>
+                </tr>
+              </tbody>
+          </table>
+          <div>
+              <span className='reactIcon'>
+                <HiOutlineBuildingOffice size={25}/>
+                <a href={value.orgUrl} title={value.orgTitle} target="_blank" rel='noopener noreferrer' className='text-black'>{value.orgName}</a>, {value.orgLoc}
+              </span>
+          </div>
+          <div className=''>
+              {value.jobDesc}
+              {value.jobDesc1}
+          </div>
+          <hr>
+          </hr>
+        </div>))
+      }
+      {/* <table style={{width:'100%'}}>
           <tbody>
             <tr>
                 <td><b>Associate Consultant</b> - TMT</td>
                 <td>
                   <span className='reactIcon' style={{justifyContent:'right'}}>
-                      October 2021 - present
+                      Oct 2021 - present
                       <BiCalendar size={20}/>
                   </span>
                 </td>
@@ -87,7 +125,7 @@ const Experience = () => {
                 <td><b>Associate Consultant</b> - Banking</td>
                 <td>
                   <span className='reactIcon' style={{justifyContent:'right'}}>
-                      November 2020 - October 2021
+                      Nov 2020 - Oct 2021
                       <BiCalendar size={20}/>
                   </span>
                 </td>
@@ -111,7 +149,7 @@ const Experience = () => {
                 <td><b>Software Engineer</b> - Insurance</td>
                 <td>
                   <span className='reactIcon' style={{justifyContent:'right'}}>
-                      January 2019 - October 2020
+                      Jan 2019 - Oct 2020
                       <BiCalendar size={20}/>
                   </span>
                 </td>
@@ -126,7 +164,7 @@ const Experience = () => {
       </div>
       <div>
           Designed and Developed an Insurance application products such as Medical, Two - Wheeler, Private Car, Commercial Vehicle, COVID-19 for Indian regions using Java/J2EE technologies.
-      </div>
+      </div> */}
     </div>
     </>
   )
