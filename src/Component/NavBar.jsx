@@ -9,7 +9,7 @@ const NavBar = () => {
       <div className="border-bottom border-light fixed-top">
         <div className="">
           <div className="row">
-              <nav className="navbar navbar-expand Nav">
+              <nav className="navbar navbar-expand Nav MobileMenuDivWrapper">
                     <ul className="navbar-nav">
                         <li className="nav-item fs-5">
                           <Link className="nav-link px-4" to="/">

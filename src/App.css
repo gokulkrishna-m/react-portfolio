@@ -161,3 +161,15 @@
   display: flex;
 /* justify-content: right; */
 }
+.MobileMenuDivWrapper { 
+  height: auto;
+  max-height: fit-content;
+  /* width: auto; */
+  overflow-x: scroll;
+  -webkit-overflow-scrolling:touch;
+  /* mobile safari */
+  scrollbar-width: none;  
+
+  /* overflow: scroll;
+  overflow-x: hidden; */
+}
